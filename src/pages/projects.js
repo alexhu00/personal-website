@@ -1,16 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const SecondPage = () => (
+const Projects = () => (
   <Layout>
-    <Seo title="Page two" />
-    <h1>Hi from the second page</h1>
+    <Seo title="Projects" />
+    <h1>Projects</h1>
     <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
+    <Link to="/">Back</Link>
   </Layout>
 )
 
-export default SecondPage
+export default Projects

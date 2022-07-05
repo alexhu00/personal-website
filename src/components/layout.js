@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import "../styles/layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -29,8 +29,10 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: `var(--size-content)`,
-          padding: `var(--size-gutter)`,
+          // maxWidth: `var(--size-content)`,
+          maxWidth: 850, // essentially 730 after 60 60 padding
+          // padding: `var(--size-gutter)`,
+          padding: "50px 60px 0px 60px",
         }}
       >
         <main>{children}</main>
@@ -40,7 +42,7 @@ const Layout = ({ children }) => {
             fontSize: `var(--font-sm)`,
           }}
         >
-          © {new Date().getFullYear()} &middot; Built with
+          © {new Date().getFullYear()} &middot; Built with love and with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
