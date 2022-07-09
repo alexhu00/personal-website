@@ -62,18 +62,3 @@ Header.defaultProps = {
 }
 
 export default Header
-
-{
-  /* <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <Link to="/photos" className="nav-link" activeClassName="active">
-              Photos
-            </Link>
-          </li>
-          <li class="nav-item">
-            <Link to="/projects" className="nav-link" activeClassName="active">
-              Projects
-            </Link>
-          </li>
-        </ul> */
-}

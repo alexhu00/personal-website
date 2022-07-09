@@ -1,0 +1,31 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  column-gap: 10%;
+  padding-top: 35px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 47%;
+}
+
+.column img {
+  vertical-align: middle;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-right: 10px;
+  filter: drop-shadow(0 0.3rem 0.45rem rgba(0, 0, 0, 0.2));
+}
+
+.text {
+  position: relative;
+}
+
+.projectTitle {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}

@@ -48,11 +48,6 @@
   text-align: center;
 }
 
-.intro {
-  max-width: none;
-  line-height: var(--line-height-loose);
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -61,13 +56,9 @@
   padding-top: 35px;
 }
 
-/* Create four equal columns that sits next to each other */
 .column {
   flex: 30%;
   max-width: 47%;
-  /* width: 90%; */
-  /* padding: 0 15px; */
-  /* padding-right: 10px; */
 }
 
 .column img {

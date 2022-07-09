@@ -16,7 +16,6 @@ const NonStretchedImage = props => {
       },
     }
   }
-
   return <Img {...normalizedProps} />
 }
 export default NonStretchedImage
