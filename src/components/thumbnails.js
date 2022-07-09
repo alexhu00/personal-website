@@ -12,13 +12,20 @@ const style = theme => ({
     width: "100%",
     height: "100%",
   },
+  thumbnail: {
+    aspectRatio: "2/3",
+  },
 })
 
 const ThumbGrid = ({ images, classes, handleOpen }) => {
   return images.map((image, i) => (
     <Grid item key={i} xs={12} sm={6} md={4}>
       <ButtonBase onClick={handleOpen(i)} className={classes.previewButton}>
-        <Img fluid={image.node.childImageSharp.fluid} alt={image.node.base} />
+        <Img
+          fluid={image.node.childImageSharp.fluid}
+          className={classes.thumbnail}
+          alt={image.node.base}
+        />
       </ButtonBase>
     </Grid>
   ))

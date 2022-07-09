@@ -11,36 +11,7 @@ import Seo from "../components/seo"
 const Photos = ({ data }) => (
   <Layout>
     <Seo title="Photography" />
-    {/* <h1>Photography</h1> */}
     <Gallery />
-    {/* <div>
-      <div className={styles.row}>
-        <div className={styles.column}>
-          <StaticImage
-            src="../images/photos/sf-rolling-hills.jpeg"
-            width={600}
-            placeholder="tracedSVG"
-          ></StaticImage>
-        </div>
-        <div className={styles.column}>
-          <StaticImage
-            src="../images/photos/san-diego-sunset-cliffs.jpeg"
-            width={600}
-            placeholder="tracedSVG"
-          ></StaticImage>
-        </div>
-        <div className={styles.column}>
-          <StaticImage
-            src="../images/photos/nyc-vessel.jpeg"
-            width={600}
-            placeholder="tracedSVG"
-          ></StaticImage>
-        </div>
-      </div>
-    </div> */}
-    <Link to="/" className={styles.back}>
-      Back
-    </Link>
   </Layout>
 )
 

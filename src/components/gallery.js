@@ -47,7 +47,10 @@ const GalleryComponent = props => {
     <StaticQuery
       query={graphql`
         query MyQuery {
-          source: allFile(filter: { relativeDirectory: { eq: "photos" } }) {
+          source: allFile(
+            filter: { relativeDirectory: { eq: "photos" } }
+            sort: { fields: [base] }
+          ) {
             edges {
               node {
                 base

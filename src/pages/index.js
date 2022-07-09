@@ -6,17 +6,20 @@ import { Container, Row, Col } from "react-bootstrap"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/index.module.css"
+import HomeImage from "../components/homeImage"
+
+var refreshPage = () => window.location.reload()
+var instagram = () =>
+  (window.location.href = "https://www.instagram.com/alexhu._/")
+var linkedin = () =>
+  (window.location.href = "https://www.linkedin.com/in/alex-hu00/")
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <div className={styles.row}>
       <div className={styles.column}>
-        <StaticImage
-          src="../images/photos/sf-rolling-hills.jpeg"
-          width={600}
-          placeholder="tracedSVG"
-        ></StaticImage>
+        <HomeImage />
       </div>
       <div className={styles.text}>
         <p className={styles.alex}>
@@ -28,19 +31,22 @@ const IndexPage = () => (
         <p>Sports Nut</p>
         <p>Eater of Food</p>
         <p style={{ paddingTop: "20px" }}>Born in Markham, ON 🍁</p>
-        <p style={{ paddingBottom: "20px" }}>Based in New York, NY 🗽</p>
-        <button>Refresh</button>
+        <p style={{ paddingBottom: "30px" }}>Based in New York, NY 🗽</p>
+        <p style={{ paddingBottom: "80px" }}>
+          <button className={styles.refresh} onClick={refreshPage}>
+            <b>refresh</b>
+          </button>
+        </p>
         <div className={styles.socials}>
-          <button>IG</button>
-          <button>LI</button>
+          <button className={styles.socialButton} onClick={linkedin}>
+            <StaticImage src="../images/socials/linkedin.png" width={25} />
+          </button>
+          <button className={styles.socialButton} onClick={instagram}>
+            <StaticImage src="../images/socials/instagram.png" width={25} />
+          </button>
         </div>
       </div>
     </div>
-    <div
-      style={{
-        padding: "1000px",
-      }}
-    ></div>
   </Layout>
 )
 

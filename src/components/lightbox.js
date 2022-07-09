@@ -4,8 +4,16 @@ import React from "react"
 //https://reactjsexample.com/lightbox-for-components-or-images-built-for-react/
 import LightboxReact from "lightbox-react"
 import "lightbox-react/style.css"
-
 import NonStretchedImage from "./nonStretchedImage"
+
+function caps(str) {
+  const arr = str.split(" ")
+  arr[0] += ","
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+  }
+  return arr.join(" ")
+}
 
 const Lightbox = ({
   images,
@@ -22,7 +30,14 @@ const Lightbox = ({
   )
 
   images.forEach(image =>
-    titles.push(image.node.base.split(".")[0].replaceAll("-", " "))
+    titles.push(
+      caps(
+        image.node.base
+          .split(".")[0]
+          .replaceAll("-", " ")
+          .replaceAll(/[0-9]/g, "")
+      ).replaceAll("( ", "(")
+    )
   )
 
   return (

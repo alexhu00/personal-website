@@ -83,6 +83,21 @@
   bottom: 0;
 }
 
+.socialButton {
+  padding: 0px;
+  background-color: rgb(250, 250, 250);
+  border: none;
+  margin-right: 10px;
+}
+
+.refresh {
+  /* border-radius: 10; */
+  border-radius: 100px;
+  padding: 5px 15px;
+  background-color: rgb(250, 250, 250);
+  font-size: 1rem;
+}
+
 .text {
   position: relative;
 }
