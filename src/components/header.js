@@ -2,14 +2,14 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import logo from "../images/AH.png"
-import { navBar, navItem } from "../styles/header.module.css"
-
-import { Container, Navbar, Nav } from "react-bootstrap"
+import * as styles from "../styles/header.module.css"
+import { Container, Navbar } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className={styles.mobileNav}>
     <Container>
       <Navbar
+        sticky="top"
         style={{
           margin: `0 auto`,
           padding: "80px 60px 20px 60px",
@@ -21,17 +21,17 @@ const Header = ({ siteTitle }) => (
       >
         <a class="navbar-brand">
           <Link to="/">
-            <img src={logo} alt={siteTitle} height={15}></img>
+            <img src={logo} alt={siteTitle} height={12}></img>
           </Link>
         </a>
         <div>
-          <Link to="/photos" className={navItem} style={{ marginRight: 30 }}>
+          <Link to="/photos" className={styles.navItem}>
             Photos
           </Link>
-          <Link to="/projects" className={navItem} style={{ marginRight: 30 }}>
+          <Link to="/projects" className={styles.navItem}>
             Projects
           </Link>
-          <Link to="/about" className={navItem}>
+          <Link to="/about" className={styles.navItem}>
             About
           </Link>
         </div>

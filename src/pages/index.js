@@ -1,56 +1,46 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { Container, Row, Col } from "react-bootstrap"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/index.module.css"
 
-const samplePageLinks = [
-  {
-    text: "Photos",
-    url: "photos",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "Projects", url: "projects" },
-  { text: "About", url: "about" },
-  // { text: "TypeScript", url: "using-typescript" },
-  // { text: "Server Side Rendering", url: "using-ssr" },
-  // { text: "Deferred Static Generation", url: "using-dsg" },
-]
-
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
-
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome <b>Alex!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+    <div className={styles.row}>
+      <div className={styles.column}>
+        <StaticImage
+          src="../images/photos/sf-rolling-hills.jpeg"
+          width={600}
+          placeholder="tracedSVG"
+        ></StaticImage>
+      </div>
+      <div className={styles.text}>
+        <p className={styles.alex}>
+          <b>Alex Hu</b>
+        </p>
+        {/* <p className={styles.intro}></p> */}
+        <p>Product Manager</p>
+        <p>Aspiring Photographer</p>
+        <p>Sports Nut</p>
+        <p>Eater of Food</p>
+        <p style={{ paddingTop: "20px" }}>Born in Markham, ON 🍁</p>
+        <p style={{ paddingBottom: "20px" }}>Based in New York, NY 🗽</p>
+        <button>Refresh</button>
+        <div className={styles.socials}>
+          <button>IG</button>
+          <button>LI</button>
+        </div>
+      </div>
     </div>
+    <div
+      style={{
+        padding: "1000px",
+      }}
+    ></div>
   </Layout>
 )
 
@@ -125,3 +115,30 @@ export default IndexPage
 </React.Fragment>
 ))} */
 }
+
+// <StaticImage
+// src="../images/example.png"
+// loading="eager"
+// width={64}
+// quality={95}
+// formats={["auto", "webp", "avif"]}
+// alt=""
+// style={{ marginBottom: `var(--space-3)` }}
+// />
+
+// const samplePageLinks = [
+//   {
+//     text: "Photos",
+//     url: "photos",
+//     badge: false,
+//     description:
+//       "A simple example of linking to another page within a Gatsby site",
+//   },
+//   { text: "Projects", url: "projects" },
+//   { text: "About", url: "about" },
+//   { text: "TypeScript", url: "using-typescript" },
+//   { text: "Server Side Rendering", url: "using-ssr" },
+//   { text: "Deferred Static Generation", url: "using-dsg" },
+// ]
+
+// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`

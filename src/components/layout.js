@@ -4,7 +4,6 @@
  *
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
-
 import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -30,9 +29,9 @@ const Layout = ({ children }) => {
         style={{
           margin: `0 auto`,
           // maxWidth: `var(--size-content)`,
-          maxWidth: 850, // essentially 730 after 60 60 padding
+          maxWidth: 850, // 850 to essentially 730 after 60 60 padding but then 15 15 = +30 for image padding
           // padding: `var(--size-gutter)`,
-          padding: "50px 60px 0px 60px",
+          padding: "30px 60px 0px 60px",
         }}
       >
         <main>{children}</main>

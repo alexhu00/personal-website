@@ -1,31 +1,23 @@
-.container {
-  margin: auto;
-  max-width: 500px;
-  font-family: sans-serif;
-}
-
-/* .navBar {
-  margin: 0 auto;
-  padding-top: 80;
-  padding-bottom: 20;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: white;
-  max-width: 750;
-  border-bottom: 1.5px solid rgb(122, 122, 122),
-} */
-
-.navBar {
-  padding-left: 20;
-}
-
 .navItem {
   color: rgb(122, 122, 122);
   text-decoration: none;
   font-weight: 350;
 }
 
-.line {
-  display: block;
+.navItem:not(:last-child) {
+  margin-right: 43px;
+}
+
+.mobile-nav {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1; /* So images don't float over the navbar */
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .navItem:not(:last-child) {
+    margin-right: 30px;
+  }
 }
