@@ -1,8 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-import { Container, Row, Col } from "react-bootstrap"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/index.module.css"
@@ -10,9 +7,10 @@ import HomeImage from "../components/homeImage"
 
 var refreshPage = () => window.location.reload()
 var instagram = () =>
-  (window.location.href = "https://www.instagram.com/alexhu._/")
+  window.open("https://www.instagram.com/alexhu._/", "_blank")
 var linkedin = () =>
-  (window.location.href = "https://www.linkedin.com/in/alex-hu00/")
+  window.open("https://www.linkedin.com/in/alex-hu00/", "_blank")
+var github = () => window.open("https://github.com/alexhu00/", "_blank")
 
 const IndexPage = () => (
   <Layout>
@@ -38,10 +36,13 @@ const IndexPage = () => (
         </p>
         <div className={styles.socials}>
           <button className={styles.socialButton} onClick={linkedin}>
-            <StaticImage src="../images/socials/linkedin.png" width={25} />
+            <StaticImage src="../images/socials/linkedin.png" width={23} />
           </button>
           <button className={styles.socialButton} onClick={instagram}>
-            <StaticImage src="../images/socials/instagram.png" width={25} />
+            <StaticImage src="../images/socials/instagram.png" width={23} />
+          </button>
+          <button className={styles.socialButton} onClick={github}>
+            <StaticImage src="../images/socials/github.png" width={23} />
           </button>
         </div>
       </div>

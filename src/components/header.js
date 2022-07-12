@@ -19,11 +19,11 @@ const Header = ({ siteTitle }) => (
           maxWidth: 850, // essentially 730 after 60 60 padding
         }}
       >
-        <a class="navbar-brand">
+        <div class="navbar-brand">
           <Link to="/">
             <img src={logo} alt={siteTitle} height={12}></img>
           </Link>
-        </a>
+        </div>
         <div>
           <Link to="/photos" className={styles.navItem}>
             Photos
