@@ -3,6 +3,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/project-page.module.css"
 import { StaticImage } from "gatsby-plugin-image"
+import Gallery from "../components/galleries/yahoo_gallery/gallery"
+import OldGallery from "../components/galleries/yahoo_gallery/oldGallery"
 
 const Yahoo = () => {
   return (
@@ -17,14 +19,12 @@ const Yahoo = () => {
       <p>1.) Improve the visual aesthetic of the desktop version</p>
       <p>2.) Reduce information clutter</p>
       <p>3.) Add more player analysis features ​</p>
-      <div className={styles.row}>
-        <div className={styles.column}>
-          <StaticImage src="../images/projects/yahoo.png"></StaticImage>
-        </div>
-        <div className={styles.column}>
-          <StaticImage src="../images/projects/yahoo.png"></StaticImage>
-        </div>
-      </div>
+      <hr style={{ marginTop: "2rem" }}></hr>
+      <h2>Actual Desktop Site</h2>
+      <OldGallery />
+      <hr style={{ marginTop: "3rem" }}></hr>
+      <h2>Re-Design</h2>
+      <Gallery />
     </Layout>
   )
 }

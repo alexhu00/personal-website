@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import ThumbGrid from "./thumbnails"
-import LightBox from "./lightbox"
+import LightBox from "../lightbox"
 import { Grid } from "@material-ui/core"
 import { graphql, StaticQuery } from "gatsby"
 
-const GalleryComponent = props => {
+const OldGallery = props => {
   const [showLightbox, setShowLightbox] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
 
@@ -23,12 +23,20 @@ const GalleryComponent = props => {
     setSelectedImage((i + 1) % length)
   }
 
+  function caps(str) {
+    const arr = str.split(" ")
+    for (var i = 0; i < arr.length; i++) {
+      arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1)
+    }
+    return arr.join(" ")
+  }
+
   return (
     <StaticQuery
       query={graphql`
-        query MyQuery {
+        query Q {
           source: allFile(
-            filter: { relativeDirectory: { eq: "photos" } }
+            filter: { relativeDirectory: { eq: "projectCovers/yahoo/before" } }
             sort: { fields: [base] }
           ) {
             edges {
@@ -58,6 +66,7 @@ const GalleryComponent = props => {
                 handleNextRequest={handleNextRequest}
                 handlePrevRequest={handlePrevRequest}
                 selectedImage={selectedImage}
+                caps={caps}
               />
             )}
           </Grid>
@@ -66,4 +75,4 @@ const GalleryComponent = props => {
     />
   )
 }
-export default GalleryComponent
+export default OldGallery
