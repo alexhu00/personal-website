@@ -7,10 +7,10 @@ import HomeImage from "../components/homeImage"
 
 var refreshPage = () => window.location.reload()
 var instagram = () =>
-  (window.location.href = "https://www.instagram.com/alexhu._/")
+  window.open("https://www.instagram.com/alexhu._/", "_blank")
 var linkedin = () =>
-  (window.location.href = "https://www.linkedin.com/in/alex-hu00/")
-var github = () => (window.location.href = "https://github.com/alexhu00/")
+  window.open("https://www.linkedin.com/in/alex-hu00/", "_blank")
+var github = () => window.open("https://github.com/alexhu00/", "_blank")
 
 const IndexPage = () => (
   <Layout>

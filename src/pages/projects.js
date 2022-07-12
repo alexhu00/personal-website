@@ -30,7 +30,10 @@ const Projects = () => (
       </div>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <a href="https://issuu.com/corporateaction/docs/thecall2020_nyustern/26">
+          <a
+            href="https://issuu.com/corporateaction/docs/thecall2020_nyustern/26"
+            target="_blank"
+          >
             <b>Olympics Sustainability Proposal</b>
           </a>
         </p>
@@ -60,7 +63,10 @@ const Projects = () => (
       </div>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <a href="https://drive.google.com/file/d/19qh3W-DjEu0PPG-gkUITjSVPEo33ct3S/view?usp=sharing">
+          <a
+            href="https://drive.google.com/file/d/19qh3W-DjEu0PPG-gkUITjSVPEo33ct3S/view?usp=sharing"
+            target="_blank"
+          >
             <b>Glooko Pitch Deck</b>
           </a>
         </p>
