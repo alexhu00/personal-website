@@ -49,7 +49,9 @@ const Projects = () => (
       </div>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <b>Social Media Graphics</b>
+          <Link to="/svs">
+            <b>Social Media Graphics</b>
+          </Link>
         </p>
         <p>Graphic Design</p>
         <p>Marketing</p>
