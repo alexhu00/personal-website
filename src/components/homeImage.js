@@ -2,21 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import { graphql, StaticQuery } from "gatsby"
 
-const HomeImage = props => {
-  function shuffle(array) {
-    let currentIndex = array.length,
-      randomIndex
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex)
-      currentIndex--
-      ;[array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ]
-    }
-    return array
-  }
-
+const HomeImage = ({ num }) => {
   return (
     <StaticQuery
       query={graphql`
@@ -38,11 +24,11 @@ const HomeImage = props => {
         }
       `}
       render={data => {
-        const images = shuffle(data.source.edges)
+        const images = data.source.edges
         return (
           <Img
-            fluid={images[0].node.childImageSharp.fluid}
-            alt={images[0].node.base}
+            fluid={images[num].node.childImageSharp.fluid}
+            alt={images[num].node.base}
           />
         )
       }}

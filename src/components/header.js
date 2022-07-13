@@ -1,6 +1,5 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
 import logo from "../images/AH.png"
 import * as styles from "../styles/header.module.css"
 import { Container, Navbar } from "react-bootstrap"
@@ -32,7 +31,7 @@ const Header = ({ siteTitle }) => (
           <AniLink fade to="/projects" className={styles.navItem}>
             Projects
           </AniLink>
-          <AniLink to="/about" className={styles.navItem}>
+          <AniLink fade to="/about" className={styles.navItem}>
             About
           </AniLink>
         </div>
