@@ -79,14 +79,25 @@
   background-color: rgb(250, 250, 250);
   border: none;
   margin-right: 10px;
+  transition-duration: 0.4s;
+}
+
+.socialButton:hover {
+  opacity: 0.7;
 }
 
 .refresh {
-  /* border-radius: 10; */
   border-radius: 100px;
+  border-color: #333;
   padding: 5px 15px;
   background-color: rgb(250, 250, 250);
   font-size: 1rem;
+  transition-duration: 0.4s;
+}
+
+.refresh:hover {
+  background-color: #333; /* Green */
+  color: white;
 }
 
 .text {
