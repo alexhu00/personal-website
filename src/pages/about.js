@@ -31,7 +31,7 @@ const About = () => {
           </p>
           <p className={styles.points}>
             I'm basically lactose intolerant, but I still love cheese.
-            Especially cheese curds in poutine. 🧀
+            Especially poutine cheese curds. 🧀
           </p>
           <p className={styles.points}>
             Feel free to email me at ah4605@stern.nyu.edu

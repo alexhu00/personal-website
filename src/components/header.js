@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
           display: `flex`,
           justifyContent: `space-between`,
           backgroundColor: "rgb(250, 250, 250)",
-          maxWidth: 850, // essentially 730 after 60 60 padding
+          maxWidth: 750, // essentially 730 after 60 60 padding
         }}
       >
         <div class="navbar-brand">
@@ -44,7 +44,7 @@ const Header = ({ siteTitle }) => (
       >
         <hr
           style={{
-            maxWidth: 730,
+            maxWidth: 630,
             margin: "0 auto",
           }}
         ></hr>
