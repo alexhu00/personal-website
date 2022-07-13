@@ -9,12 +9,14 @@ const Projects = () => (
   <Layout>
     <Seo title="Projects" />
     <div className={styles.row}>
-      <div className={styles.column}>
-        <StaticImage src="../images/projectCovers/yahoo.png"></StaticImage>
-      </div>
+      <a className={styles.column}>
+        <Link to="/yahoo">
+          <StaticImage src="../images/projectCovers/yahoo.png"></StaticImage>
+        </Link>
+      </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <Link to="/yahoo">
+          <Link to="/yahoo" className={styles.links}>
             <b>Yahoo Fantasy Re-Design</b>
           </Link>
         </p>
@@ -25,14 +27,19 @@ const Projects = () => (
       </div>
     </div>
     <div className={styles.row}>
-      <div className={styles.column}>
+      <a
+        className={styles.column}
+        href="https://issuu.com/corporateaction/docs/thecall2020_nyustern/26"
+        target="_blank"
+      >
         <StaticImage src="../images/projectCovers/olympics.png"></StaticImage>
-      </div>
+      </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
           <a
             href="https://issuu.com/corporateaction/docs/thecall2020_nyustern/26"
             target="_blank"
+            className={styles.links}
           >
             <b>Olympics Sustainability Proposal</b>
           </a>
@@ -44,12 +51,14 @@ const Projects = () => (
       </div>
     </div>
     <div className={styles.row}>
-      <div className={styles.column}>
-        <StaticImage src="../images/projectCovers/svs.png"></StaticImage>
-      </div>
+      <a className={styles.column}>
+        <Link to="/svs">
+          <StaticImage src="../images/projectCovers/svs.png"></StaticImage>
+        </Link>
+      </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <Link to="/svs">
+          <Link to="/svs" className={styles.links}>
             <b>Social Media Graphics</b>
           </Link>
         </p>
@@ -60,14 +69,19 @@ const Projects = () => (
       </div>
     </div>
     <div className={styles.row}>
-      <div className={styles.column}>
+      <a
+        className={styles.column}
+        href="https://drive.google.com/file/d/19qh3W-DjEu0PPG-gkUITjSVPEo33ct3S/view?usp=sharing"
+        target="_blank"
+      >
         <StaticImage src="../images/projectCovers/glooko.png"></StaticImage>
-      </div>
+      </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
           <a
             href="https://drive.google.com/file/d/19qh3W-DjEu0PPG-gkUITjSVPEo33ct3S/view?usp=sharing"
             target="_blank"
+            className={styles.links}
           >
             <b>Glooko Pitch Deck</b>
           </a>
