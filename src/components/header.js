@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import logo from "../images/AH.png"
 import * as styles from "../styles/header.module.css"
 import { Container, Navbar } from "react-bootstrap"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 const Header = ({ siteTitle }) => (
   <header className={styles.mobileNav}>
@@ -20,20 +21,20 @@ const Header = ({ siteTitle }) => (
         }}
       >
         <div class="navbar-brand">
-          <Link to="/">
+          <AniLink fade to="/">
             <img src={logo} alt={siteTitle} height={12}></img>
-          </Link>
+          </AniLink>
         </div>
         <div>
-          <Link to="/photos" className={styles.navItem}>
+          <AniLink fade to="/photos" className={styles.navItem}>
             Photos
-          </Link>
-          <Link to="/projects" className={styles.navItem}>
+          </AniLink>
+          <AniLink fade to="/projects" className={styles.navItem}>
             Projects
-          </Link>
-          <Link to="/about" className={styles.navItem}>
+          </AniLink>
+          <AniLink to="/about" className={styles.navItem}>
             About
-          </Link>
+          </AniLink>
         </div>
       </Navbar>
       <div

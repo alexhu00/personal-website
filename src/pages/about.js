@@ -4,7 +4,6 @@ import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 import * as styles from "../styles/index.module.css"
 
-var refreshPage = () => window.location.reload()
 var instagram = () =>
   window.open("https://www.instagram.com/alexhu._/", "_blank")
 var linkedin = () =>
