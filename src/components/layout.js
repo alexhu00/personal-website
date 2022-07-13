@@ -28,10 +28,8 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          // maxWidth: `var(--size-content)`,
-          maxWidth: 850, // 850 to essentially 730 after 60 60 padding but then 15 15 = +30 for image padding
-          // padding: `var(--size-gutter)`,
-          padding: "30px 60px 0px 60px",
+          maxWidth: 750, // 850 to essentially 730 after 60 60 padding but then 15 15 = +30 for image padding
+          padding: "20px 60px 0px 60px",
         }}
       >
         <main>{children}</main>
