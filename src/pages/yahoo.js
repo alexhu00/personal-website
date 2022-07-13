@@ -10,7 +10,7 @@ const Yahoo = () => {
   return (
     <Layout>
       <Seo title="Yahoo" />
-      <StaticImage src="../images/projects/yahoo.png"></StaticImage>
+      <StaticImage src="../images/projectCovers/yahoo.png"></StaticImage>
       <h1>Yahoo Fantasy Re-Design</h1>
       <p>
         As a fun side-project, I decided to re-design the Yahoo Fantasy
