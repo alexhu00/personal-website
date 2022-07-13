@@ -32,7 +32,7 @@ const Header = ({ siteTitle }) => (
           <AniLink fade to="/projects" className={styles.navItem}>
             Projects
           </AniLink>
-          <AniLink to="/about" className={styles.navItem}>
+          <AniLink fade to="/about" className={styles.navItem}>
             About
           </AniLink>
         </div>
