@@ -4,7 +4,7 @@ A website built mainly with React and Gatsby that I made during my free time of 
 
 ## Photos
 
-Shot mostly with my Nikon D35000. More photos [here](https://photos.app.goo.gl/rsVvGeXunDx8tNBo8)
+Shot mostly with my Nikon D35000. More photos can be viewed in my Google Photos folder [here](https://photos.app.goo.gl/rsVvGeXunDx8tNBo8).
 
 ## Projects
 
