@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as styles from "../styles/project-page.module.css"
 import { StaticImage } from "gatsby-plugin-image"
 import Gallery from "../components/galleries/yahoo_gallery/gallery"
 import OldGallery from "../components/galleries/yahoo_gallery/oldGallery"
@@ -11,7 +10,7 @@ const Yahoo = () => {
     <Layout>
       <Seo title="Yahoo" />
       <StaticImage src="../images/projectCovers/yahoo.png"></StaticImage>
-      <h1>Yahoo Fantasy Re-Design</h1>
+      <h1 style={{ marginTop: "2rem" }}>Yahoo Fantasy Re-Design</h1>
       <p>
         As a fun side-project, I decided to re-design the Yahoo Fantasy
         basketball website with the following goals in mind: ​

@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as styles from "../styles/projects.module.css"
@@ -10,15 +10,15 @@ const Projects = () => (
     <Seo title="Projects" />
     <div className={styles.row}>
       <a className={styles.column}>
-        <Link to="/yahoo">
+        <AniLink fade to="/yahoo">
           <StaticImage src="../images/projectCovers/yahoo.png"></StaticImage>
-        </Link>
+        </AniLink>
       </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <Link to="/yahoo" className={styles.links}>
+          <AniLink fade to="/yahoo" className={styles.links}>
             <b>Yahoo Fantasy Re-Design</b>
-          </Link>
+          </AniLink>
         </p>
         <p>Product Design</p>
         <p>Wireframing</p>
@@ -52,15 +52,15 @@ const Projects = () => (
     </div>
     <div className={styles.row}>
       <a className={styles.column}>
-        <Link to="/svs">
+        <AniLink fade to="/svs">
           <StaticImage src="../images/projectCovers/svs.png"></StaticImage>
-        </Link>
+        </AniLink>
       </a>
       <div className={styles.text}>
         <p className={styles.projectTitle}>
-          <Link to="/svs" className={styles.links}>
+          <AniLink fade to="/svs" className={styles.links}>
             <b>Social Media Graphics</b>
-          </Link>
+          </AniLink>
         </p>
         <p>Graphic Design</p>
         <p>Marketing</p>

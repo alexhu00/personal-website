@@ -3,20 +3,6 @@ import Img from "gatsby-image"
 import { graphql, StaticQuery } from "gatsby"
 
 const HomeImage = ({ num }) => {
-  function shuffle(array) {
-    let currentIndex = array.length,
-      randomIndex
-    while (currentIndex !== 0) {
-      randomIndex = Math.floor(Math.random() * currentIndex)
-      currentIndex--
-      ;[array[currentIndex], array[randomIndex]] = [
-        array[randomIndex],
-        array[currentIndex],
-      ]
-    }
-    return array
-  }
-
   return (
     <StaticQuery
       query={graphql`
