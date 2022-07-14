@@ -41,13 +41,13 @@ const Projects = () => (
             target="_blank"
             className={styles.links}
           >
-            <b>Olympics Sustainability Proposal</b>
+            <b>Sustainability Proposal</b>
           </a>
         </p>
         <p>Writing</p>
+        <p>Olympics</p>
         <p>Stakeholder Analysis</p>
         <p>Sustainability</p>
-        <p>Sports</p>
       </div>
     </div>
     <div className={styles.row}>
